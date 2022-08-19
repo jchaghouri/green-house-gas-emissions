@@ -13,7 +13,7 @@ def read_csv(path):
     return pd.read_csv(path)
 
 filename = 'greenhouse_gas_inventory_data_data.csv'
-df = read_csv('Data/' + filename)
+df = read_csv(filename)
 
 table = pd.pivot_table(df, values='value', index=['country_or_area', 'year'], columns=['category'])
 gasnames = table.columns.values
@@ -87,7 +87,7 @@ st.sidebar.markdown("Welcome to my Green House Gas Data Visualization. This app 
 #Add title and subtitle to the main interface of the app
 st.title("Green House Gasses")
 
-st.markdown("The Greenhouse Gas (GHG) Inventory Data contains the most recently submitted information, covering the period from 1990 to 2017. Select the country below to see the gasses emitted resulting from human activities from 1990 to 2017.")
+st.markdown("The Greenhouse Gas (GHG) Inventory Data covers the gasses emitted resulting from human activities between 1990 to 2017."
 
 labels = df['country_or_area'].unique()
 print(labels)

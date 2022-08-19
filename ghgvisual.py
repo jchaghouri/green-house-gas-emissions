@@ -87,8 +87,7 @@ st.sidebar.markdown("Welcome to my Green House Gas Data Visualization. This app 
 #Add title and subtitle to the main interface of the app
 st.title("Green House Gasses")
 
-st.markdown("The Greenhouse Gas (GHG) Inventory Data covers the gasses emitted resulting from human activities between 1990 to 2017."
-
+st.markdown("The Greenhouse Gas (GHG) Inventory Data covers the gasses emitted resulting from human activities between 1990 to 2017.")
 labels = df['country_or_area'].unique()
 print(labels)
 nameOfCountry = labels

@@ -82,7 +82,7 @@ def country_plot(nameOfCountry):
 st.set_option('deprecation.showPyplotGlobalUse', False)
 #Add sidebar to the app
 st.sidebar.markdown("### Green House Gas Visualization")
-st.sidebar.markdown("Welcome to my Green House Gas Data Visualization. This app is built using streamlit and uses data from the United Nations on the UNData site. ")
+st.sidebar.markdown("Welcome to my Green House Gas Data Visualization. This app is built using streamlit and uses data from the United Nations on the UNData site. I downloaded the data here: <https://www.kaggle.com/datasets/unitednations/international-greenhouse-gas-emissions> ")
 
 #Add title and subtitle to the main interface of the app
 st.title("Green House Gasses")

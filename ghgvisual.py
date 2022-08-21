@@ -72,6 +72,8 @@ def country_plot(nameOfCountry):
     data = table.loc[nameOfCountry]
     plt.figure(figsize=(20,20))
     plt.plot(data)
+    plt.xlabel('Years',size=20)
+    plt.ylabel('Emissions (KtCO2e)',size=20)
     plt.xticks(size=20)
     plt.yticks(size=20)
     plt.legend(gases,prop={'size': 15})
@@ -82,11 +84,20 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 #Add sidebar to the app
 st.sidebar.markdown("### Green House Gas Visualization")
 st.sidebar.markdown("Welcome to my Green House Gas Data Visualization. This app is built using streamlit and uses data from the United Nations on the UNData site. I downloaded the data here: <https://www.kaggle.com/datasets/unitednations/international-greenhouse-gas-emissions> ")
+st.sidebar.markdown(" ")
+st.sidebar.markdown("Read more about how carbon emissions are measured here: <https://databank.worldbank.org/metadataglossary/world-development-indicators/series/EN.ATM.CO2E.KT#:~:text=The%20unit%20of%20measurement%20is,to%20that%20of%20carbon%20dioxide).>")
 
 #Add title and subtitle to the main interface of the app
 st.title("Green House Gasses")
 
 st.markdown("The Greenhouse Gas (GHG) Inventory Data covers the gasses emitted resulting from human activities between 1990 to 2017.")
+st.markdown("  ")
+st.markdown("The x axis in the plot below is the years from 1990 to 2017.")
+st.markdown("The y axis in the plot below is the measured emissions in kilotonnes of carbon dioxide equivalent (KtCO2e)")
+st.markdown("Read more about the data and how GHG emissions are measured in the sidebar.")
+
+
+
 labels = df['country_or_area'].unique()
 print(labels)
 nameOfCountry = labels

@@ -91,9 +91,9 @@ st.sidebar.markdown(" ")
 #Add title and subtitle to the main interface of the app
 st.title("Green House Gasses")
 
-st.markdown("The Greenhouse Gas (GHG) Inventory Data covers the gasses emitted resulting from human activities between 1990 to 2017.")
+st.markdown("The Greenhouse Gas (GHG) Inventory Data covers the gasses emitted resulting from human activities between 1990 to 2015.")
 st.markdown("  ")
-st.markdown("The x axis in the plot below is the years from 1990 to 2017.")
+st.markdown("The x axis in the plot below is the years from 1990 to 2015.")
 st.markdown("The y axis in the plot below is the measured emissions in kilotonnes of carbon dioxide equivalent (KtCO2e). The y axis is also in log scale so the data can be interreted more accurately.")
 st.markdown("Read more about the data and how GHG emissions are measured [here](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/EN.ATM.CO2E.KT#:~:text=The%20unit%20of%20measurement%20is,to%20that%20of%20carbon%20dioxide).")
 

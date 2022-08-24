@@ -105,7 +105,7 @@ nameOfCountry = labels
 
 
 
-country_selected = st.selectbox("Choose a country",nameOfCountry)
+country_selected = st.selectbox("Choose a country:",nameOfCountry)
 
 
 fig = country_plot(country_selected) 
